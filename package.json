@@ -1,0 +1,11 @@
+{
+  "name": "floby",
+  "version": "0.0.1",
+  "description": "A class to work and manage files",
+  "keywords": [ "file", "fs", "path" ],
+  "author": "Josemi Juanes <josemijuanes@gmail.com>",
+  "main": "./index.js",
+  "repository": { "type": "git", "url": "https://github.com/jmjuanes/floby" },
+  "dependencies": { "pstat": "1.0.2" },
+  "license": "MIT"
+}
