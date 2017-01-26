@@ -1,6 +1,6 @@
 # floby
 
-[![npm](https://img.shields.io/npm/v/floby.svg?style=flat-square)](https://www.npmjs.com/package/flofy)
+[![npm](https://img.shields.io/npm/v/floby.svg?style=flat-square)](https://www.npmjs.com/package/floby)
 [![npm](https://img.shields.io/npm/dt/floby.svg?style=flat-square)](https://www.npmjs.com/package/floby)
 [![npm](https://img.shields.io/npm/l/floby.svg?style=flat-square)](https://github.com/jmjuanes/floby)
 
