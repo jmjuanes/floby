@@ -5,7 +5,14 @@
   "keywords": [ "file", "fs", "path" ],
   "author": "Josemi Juanes <josemijuanes@gmail.com>",
   "main": "./index.js",
-  "repository": { "type": "git", "url": "https://github.com/jmjuanes/floby" },
-  "dependencies": { "pstat": "1.0.2" },
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/jmjuanes/floby"
+  },
+  "dependencies":
+  {
+    "utily": "^0.2.3"
+  },
   "license": "MIT"
 }
