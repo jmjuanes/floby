@@ -14,5 +14,13 @@
   {
     "utily": "^0.2.3"
   },
+  "devDependencies":
+  {
+    "mocha": "^4.0.1"
+  },
+  "scripts":
+  {
+    "test": "./node_modules/.bin/mocha --reporter spec"
+  },
   "license": "MIT"
 }
