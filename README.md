@@ -30,8 +30,16 @@ Create a new file manager object to manage a file. This method accepts the follo
   - `parse_read`: a function that will parse the data after reading the file by the `read` and `readSync` methods.
   - `parse_write`: a function that will parse the data before writing the file by the `write` and `writeSync` methods.
 
+Example with a path string: 
+
 ```javascript
 var file = new floby('/path/to/my/file.txt', { encoding: 'utf8' });
+```
+
+Same example with a `pathObject`: 
+
+```javascript
+var file = new floby({ dir: '/path/to/my', base: 'file.txt' }, { encoding: 'utf8' });
 ```
 
 ### file.read(cb)
