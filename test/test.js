@@ -131,4 +131,21 @@ describe('floby', function()
       });
     });
   });
+
+  describe('mkdir', function()
+  {
+    it('should create the parent directory', function(done)
+    {
+      var file_path = path.join(__dirname, './floby-mkdir-1/file.txt');
+      var file = new floby(file_path);
+      //assert.equal(fs.existsSync(file.path), false);
+      //assert.equal(fs.existsSync(file.dirname), false);
+      file.mkdir(function(error)
+      {
+        assert.equal(error, null);
+        assert.equal(fs.existsSync(file.dirname), true);
+        done();
+      });
+    });
+  });
 });
