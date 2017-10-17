@@ -27,8 +27,8 @@ Create a new file manager object to manage a file. This method accepts the follo
 - `path`: a string or a [`pathObject`](https://nodejs.org/api/path.html#path_path_format_pathobject) with the path to the file.
 - `options`: an object with the following optative options:
   - `encoding`: a string with the file encoding. Default is `utf8`.
-  - `reader`: a function that will parse the data after reading the file by the `read` and `readSync` methods.
-  - `writer`: a function that will parse the data before writing the file by the `write` and `writeSync` methods.
+  - `reader`: a function that will parse the data after reading the file by the `read` method.
+  - `writer`: a function that will parse the data before writing the file by the `write` method.
 
 Example with a path string: 
 
