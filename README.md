@@ -60,6 +60,19 @@ file.exists(function(error, exists)
 });
 ```
 
+### file.mkdir(cb)
+
+Creates the parent directory of the file. The callback method will be executed with an `error` object if something went wrong.
+
+```javascript
+file.mkdir(function(error)
+{
+  //Check the error 
+  if(error){ /* something went wrong */ } 
+  
+  //Parent folder created!
+});
+```
 
 ### file.read(cb)
 
@@ -73,6 +86,19 @@ file.read(function(error, data)
 
   //Do some stuff with your data
   //...
+});
+```
+
+### file.unlink(cb)
+
+Remove the file and execute the provided callback method with an `error` object if something went wrong. 
+
+```javascript
+file.unlink(function(error)
+{
+  //Check the error object 
+  if(error){ /* something went wrong */ } 
+  
 });
 ```
 
@@ -90,19 +116,6 @@ file.write(data, function(error)
 
   //Continue
   //...
-});
-```
-
-### file.unlink(cb)
-
-Remove the file and execute the provided callback method with an `error` object if something went wrong. 
-
-```javascript
-file.unlink(function(error)
-{
-  //Check the error object 
-  if(error){ /* something went wrong */ } 
-  
 });
 ```
 
