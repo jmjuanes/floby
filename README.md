@@ -42,6 +42,25 @@ Same example with a `pathObject`:
 var file = new floby({ dir: '/path/to/my', base: 'file.txt' }, { encoding: 'utf8' });
 ```
 
+### file.exists(cb)
+
+Check if the file exists. This method will execute the provided callback `cb` method with an `error` object if something went wrong, and an `exists` boolean that indicates if the file exists or not.
+
+```javascript
+file.exists(function(error, exists)
+{
+  //Check the error 
+  if(error){ /* do something with the error */ } 
+  
+  //Check if the file exists 
+  if(exists === true)
+  {
+    //Do your magic...
+  }
+});
+```
+
+
 ### file.read(cb)
 
 Read the file content and emit the `cb` function with the same arguments as the [fs.readFile](https://nodejs.org/api/fs.html#fs_fs_readfile_file_options_callback) function.
