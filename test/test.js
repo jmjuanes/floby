@@ -101,4 +101,34 @@ describe('floby', function()
       });
     });
   });
+
+  describe('unlink', function()
+  {
+    it('should remove the file', function(done)
+    {
+      var file_path = path.join(__dirname, './floby-unlink-1.txt');
+      fs.writeFileSync(file_path, 'Hello', 'utf8');
+      var file = new floby(file_path);
+      assert.equal(fs.existsSync(file.path), true);
+      file.unlink(function(error)
+      {
+        assert.equal(error, null);
+        assert.equal(fs.existsSync(file.path), false);
+        done();
+      });
+    });
+
+    it('should not throw an error if file does not exists', function(done)
+    {
+      var file_path = path.join(__dirname, './floby-unlink-2.txt');
+      var file = new floby(file_path);
+      assert.equal(fs.existsSync(file.path), false);
+      file.unlink(function(error)
+      {
+        assert.equal(error, null);
+        assert.equal(fs.existsSync(file.path), false);
+        done();
+      });
+    });
+  });
 });
