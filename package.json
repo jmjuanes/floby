@@ -1,6 +1,6 @@
 {
   "name": "floby",
-  "version": "0.0.7",
+  "version": "0.1.0",
   "description": "A class to work and manage files",
   "keywords": [ "file", "fs", "path" ],
   "author": "Josemi Juanes <josemijuanes@gmail.com>",
