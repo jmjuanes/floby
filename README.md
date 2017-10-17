@@ -93,6 +93,19 @@ file.write(data, function(error)
 });
 ```
 
+### file.unlink(cb)
+
+Remove the file and execute the provided callback method with an `error` object if something went wrong. 
+
+```javascript
+file.unlink(function(error)
+{
+  //Check the error object 
+  if(error){ /* something went wrong */ } 
+  
+});
+```
+
 ## License
 
 [MIT LICENSE](./LICENSE) &copy; Josemi Juanes.
