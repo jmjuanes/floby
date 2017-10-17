@@ -85,4 +85,20 @@ describe('floby', function()
       });
     });
   });
+
+  describe('write', function()
+  {
+    it('should write the file', function(done)
+    {
+      var file_path = path.join(__dirname, './floby-write.txt');
+      var file_content = 'File content';
+      var file = new floby(file_path);
+      file.write(file_content, function(error)
+      {
+        assert.equal(error, null);
+        assert.equal(file_content, fs.readFileSync(file_path, 'utf8'));
+        done();
+      });
+    });
+  });
 });
