@@ -57,10 +57,6 @@ file.read(function(error, data)
 });
 ```
 
-### file.readSync(data)
-
-Synchronous version of `file.read`. Returns the content of the file.
-
 ### file.write(data, cb)
 
 Write the `data` to the file, and emit the `cb` function with the same arguments as the [fs.writeFile](https://nodejs.org/api/fs.html#fs_fs_writefile_file_data_options_callback) function.
@@ -77,10 +73,6 @@ file.write(data, function(error)
   //...
 });
 ```
-
-### file.writeSync(data)
-
-Synchronous version of `file.write`. Write the `data` to the file.
 
 ## License
 
