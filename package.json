@@ -12,7 +12,8 @@
   },
   "dependencies":
   {
-    "utily": "^0.2.3"
+    "utily": "^0.2.3",
+    "ini": "^1.3.5"
   },
   "devDependencies":
   {
