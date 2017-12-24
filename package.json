@@ -2,25 +2,25 @@
   "name": "floby",
   "version": "0.1.0",
   "description": "A class to work and manage files",
-  "keywords": [ "file", "fs", "path" ],
+  "keywords": [
+    "file",
+    "fs",
+    "path"
+  ],
   "author": "Josemi Juanes <josemijuanes@gmail.com>",
   "main": "./index.js",
-  "repository":
-  {
+  "repository": {
     "type": "git",
     "url": "https://github.com/jmjuanes/floby"
   },
-  "dependencies":
-  {
+  "dependencies": {
     "utily": "^0.2.3",
     "ini": "^1.3.5"
   },
-  "devDependencies":
-  {
+  "devDependencies": {
     "mocha": "^4.0.1"
   },
-  "scripts":
-  {
+  "scripts": {
     "test": "./node_modules/.bin/mocha --reporter spec"
   },
   "license": "MIT"
