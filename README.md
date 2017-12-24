@@ -119,6 +119,15 @@ file.write(data, function(error)
 });
 ```
 
+### var jsonFile = new floby.json(path [, options])
+
+Create a new JSON file manager. It uses the `JSON.parse` and `JSON.stringify` methods to decode and encode the file content.
+
+### var iniFile = new floby.ini(path [, options])
+
+Create a new INI file manager. It uses the [`ini`](https://www.npmjs.com/package/ini) package to encode and decode the file content.
+
+
 ## License
 
 [MIT LICENSE](./LICENSE) &copy; Josemi Juanes.
